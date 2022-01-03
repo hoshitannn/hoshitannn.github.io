@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="master.css">
+		<link rel="stylesheet" href="stylesheet.css">
+<!--		<script src="common/frame-inline.js"></script>-->
+	</head>
+	<body>
+		<iframe id="headerIframe" class="header-frame" role="presentation" src="../common/header.html"></iframe>
+		<main>
+			<div class="description">
+				<h2>星☆文☆字☆メ☆ー☆カ☆ー</h2>
+				<p>星文字メーカーは「このような文字」を簡単に作れるWebアプリです。</p>
+				<p>☆以外の記号でも作れます。</p>
+			</div>
+			<form class="main-form" onsubmit="convert(); return false;">
+				<ul>
+					<li>
+						<label for="text">テキストを入力</label>
+						<input type="text" id="text">
+					</li>
+					<li>
+						<label for="symbol">間に入れる記号・文字</label>
+						<input type="text" value="☆" maxlength="1" id="symbol">
+					</li>
+					<li>
+						<input type="submit" value="作成">
+					</li>
+				</ul>
+			</form>
+			<div class="result">
+				<h3>完成した文字列</h3>
+				<div class="result-text">
+					<div class="result-input">
+						<input type="text" id="resultText" onfocus="this.select()" readonly>
+					</div>
+					<div class="result-button">
+						<button onclick="copy()">コピー</button>
+					</div>
+				</div>
+			</div>
+		</main>
+		<script>
+			function convert() {
+				let text = document.getElementById("text").value;
+				let symbol = document.getElementById("symbol").value;
+				text = text.split("").join(symbol);
+				document.getElementById("resultText").value = text;
+			}
+			
+			function copy() {
+				document.getElementById("resultText").select();
+				document.execCommand("copy");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,166 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: "Kiwi Maru", serif;
+}
+
+.description {
+	width: 100%;
+	padding: 20px;
+	color: white;
+	text-align: center;
+	background: rgb(36,36,36);
+	background: radial-gradient(circle, rgba(36,36,36,1) 0%, rgba(0,0,0,1) 100%);
+}
+
+h2 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+}
+
+h2:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	display: inline-block;
+	width: 60px;
+	height: 3px;
+	transform: translateX(-50%);
+	background-color: white;
+	border-radius: 1px;
+}
+
+.main-form {
+	background: #fcfcfc;
+	padding: 30px 30px;
+}
+
+.main-form ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.main-form ul li {
+	display: flex;
+	flex-direction: column;
+}
+
+.main-form label {
+	padding: 10px 0;
+}
+
+.main-form input[type="text"] {
+	transition: 0.5s;
+	padding: 10px;
+	font-size: 1.3em;
+	color: #242424;
+	border: solid 1px #ccc;
+	margin: 0 0 20px;
+	width: 100%;
+	box-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	border-radius: 3px;
+}
+
+input[type="text"]:focus {
+	border: solid 1px #242424;
+}
+
+.main-form input[type="submit"] {
+	transition: 0.3s;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 15px;
+	font-family: "Kiwi Maru", serif;
+	font-weight: bold;
+	background: #242424;
+	color: white;
+}
+
+.main-form input[type="submit"]:hover {
+	opacity: 0.8;
+}
+
+h3 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 1em;
+	padding-left: 20px;
+}
+
+h3:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 0;
+	display: inline-block;
+	width: 5px;
+	height: 2em;
+	background-color: #242424;
+	border-radius: 2px;
+	transform: translateY(-50%);
+}
+
+.result {
+	padding: 30px 30px;
+	border-top: solid 1px #ccc;
+	background: #fcfcfc;
+	color: #242424;
+}
+
+.main-form ul {
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+	list-style: none;
+}
+
+.result-text {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.result-input {
+	width: 90%;
+	padding-right: 5px;
+}
+
+.result-text input {
+	transition: 0.5s;
+	width: 100%;
+	padding: 10px;
+	font-size: 1.3em;
+	color: #242424;
+	border: solid 1px #ccc;
+	box-shadow: 0 1px rgba(255, 255, 255, 0.5);
+	border-radius: 3px;
+}
+
+.result-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 10%;
+	padding-left: 5px;
+}
+
+.result-text button {
+	width: 100%;
+	transition: 0.3s;
+	padding: 10px 20px;
+	border: 0;
+	border-radius: 15px;
+	font-family: "Kiwi Maru", serif;
+	font-weight: bold;
+	background: #242424;
+	color: white;
+}
+
