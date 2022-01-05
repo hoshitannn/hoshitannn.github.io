@@ -41,6 +41,22 @@ header ul {
 	border: 0;
 }
 
+a {
+	padding: 0 5px;
+	color: #0f0880;
+	text-decoration: none;
+	border-bottom: 2px dotted #0f0880;
+}
+
+a:hover {
+	border-bottom-style: solid;
+}
+
+a:visited {
+	color: #443eb5;
+	border-bottom: 2px dotted #443eb5;
+}
+
 @media screen and (max-width: 768px) {
 	header h1 img {
 		height: 3vh;
