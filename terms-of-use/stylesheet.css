@@ -26,6 +26,10 @@ main .content {
 	padding: 50px 10%;
 }
 
+main span {
+	color: #555;
+}
+
 h3 {
 	padding-left: .5em;
 	border-left: solid 5px #242424;
