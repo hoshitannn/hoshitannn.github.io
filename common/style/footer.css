@@ -1,0 +1,36 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+footer {
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background: rgb(3,0,52);
+	background: linear-gradient(130deg, rgba(3,0,52,1) 15%, rgba(3,3,70,1) 35%, rgba(2,0,36,1) 75%);
+}
+
+footer ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+footer ul li {
+	padding: 5px 20px;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: white;
+}
+
+footer .copy-light {
+	display: flex;
+	justify-content: center;
+	padding: 5px;
+}
