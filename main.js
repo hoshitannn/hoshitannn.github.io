@@ -1,9 +1,13 @@
-const ring = new Audio();
-ring.src = "ring.mp3";
+function func() {
 
-const ndef = new NDEFReader();
-await ndef.scan();
+    const ring = new Audio();
+    ring.src = "ring.mp3";
+    
+    const ndef = new NDEFReader();
+    ndef.scan();
+    
+    ndef.addEventListener("readingerror", () => {
+      ring.play();
+    });
 
-ndef.addEventListener("readingerror", () => {
-  ring.play();
-});
+}
